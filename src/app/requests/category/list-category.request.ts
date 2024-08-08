@@ -25,7 +25,7 @@ export class ListCategoryRequest extends params {
             stateFilter
         )
 
-        startDate = convertDateToRequest(this.startDate,'date');
-        endDate = convertDateToRequest(this.endDate,'date');
+        this.startDate = convertDateToRequest(this.startDate,'date');
+        this.endDate = convertDateToRequest(this.endDate,'date');
     }
 }
